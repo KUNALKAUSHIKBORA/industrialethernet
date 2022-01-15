@@ -1,0 +1,107 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: .3;
+}
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:.3;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:.3;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:.3;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:.3;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:.3;}
+}
+
+#IE {
+	z-index: 10000000;
+	text-align: center;
+	filter: invert(100%);
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	mix-blend-mode: overlay;
+}
+
+.benefits {
+	font-family: "Roboto";
+	letter-spacing: 2px;
+	color: #ffffff;
+	font-weight: 700;
+	margin: 20px;
+	z-index: 10000000;
+	padding: 20px;
+	background-color: #666666;
+	/*scroll-snap-type: y mandatory;
+	scroll-snap-align: start;*/
+}
+.benefits h3 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.benefitsList {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	text-align: center;
+}
+.benefitsList>div {
+padding: 20px;
+}
+.fontAwesome {
+	padding: 5px;
+	font-size: 25px;
+}
+.IEdescription {
+	font-family: "Roboto";
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	color: #ffffff;
+	z-index: 10000000;
+}
+.IEdescription h2 {
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+}
+.IEdescription h5 {
+	letter-spacing: 3px;
+	line-height: 20px;
+}
