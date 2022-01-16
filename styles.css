@@ -1,4 +1,5 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto&display=swap');
 * {
 margin: 0;
 padding: 0;
@@ -104,4 +105,70 @@ padding: 20px;
 .IEdescription h5 {
 	letter-spacing: 3px;
 	line-height: 20px;
+}
+
+
+
+
+
+.highlight {
+	position: relative;
+	font-size: 1.6vw;
+	color: #ff6400;
+	font-weight: 700;
+	font-family: "Merriweather", serif;
+	letter-spacing: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.highlight:before {
+	position: absolute;
+	content: '';
+	z-index: -1;
+	top: -2px;
+	left: -5px;
+	right: -5px;
+	bottom: -2px;
+	background-color: #ffffff;
+	transform-origin: 0;
+	transition: transform .8s ease;
+	transform: scaleX(0);
+}
+
+.in-view .highlight:before {
+	transform: scaleX(1);
+}
+.mains {
+	text-align: center;
+	opacity: 1;
+	z-index: 100;
+}
+
+.kueblerAdvantages {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 30px;
+padding-left: 90px;
+padding-right: 90px;
+font-size: 30px;
+color: #ffffff;
+font-family: "Roboto";
+font-size: 1.2vw;
+z-index: 1000000;
+fon-weight: 600;
+letter-spacing: 3px;
+}
+.kueblerAdvantages h4 {
+letter-spacing: 1.5px;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.kueblerAdvantages li {
+margin: 10px;
+}
+.kueblerAdvantages div {
+align-items: left;
 }
