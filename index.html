@@ -18,7 +18,7 @@
   </head>
   <body>
 	<div class="fade-in-image">
-	<video src="Pexels Videos 2073129 (2).mp4" muted loop autoplay></video>
+	<video src="1.mp4" muted loop autoplay></video>
   	</div>
 	<div class="overlay"></div>
 
@@ -74,6 +74,58 @@ platform, from the field devices to the control level to the cloud. And this wit
 The corresponding communication capability of the sensors plays an essential role here. This is why <span style="color: #ff6400;">Kubler</span> has put the
 focus on the development of a high-performance and efficient Industrial Ethernet encoder platform.</h5>
 	</section>
+
+<section class="mains">
+	<p id="highlight-effect">
+		<span class="highlight" style="z-index: 10000;">Kubler Industrial Ethernet encoder platform</span>
+	</p>
+</section>
+
+<div class="kueblerAdvantages">
+		<div>
+			<h4>Common encoder base</h4>
+			<ul>
+				<li>Absolute Singleturn or multiturn encoders</li>
+				<li>Sendix F58, multiturn with patented Intelligent Scan Technology&trade; </li>
+				<li>Sendix S58 for functional safety, multiturn with redundant mechanical gear unit</li>
+				<li>Robust bearing construction in Safety-Lock&trade; design</li>
+				<li>Options like approvals, surface protection, default configurations or features like shared device, I&M records 1-4, FSU, and many more</li>
+				<li>Updates possible via integrated web server</li>
+			</ul>
+		</div>
+		<div>
+			<h4>For all Industrial Ethernet applications</h4>
+			<ul>
+				<li>Industrial Ethernet protocols such as PROFINET IO, EtherCAT and EtherNet/IP</li>
+				<li>Future convergent protocols such as OPC-UA and MQTT</li>
+				<li>Application profiles such as PROFIdrive or PROFIenergy, as well as PROFIsafe, FSoE or CIP-Safety for functional safety</li>
+				<li>Integrated web server and cyber security</li>
+			</ul>
+		</div>
+</div>
+<script>
+const wrapper = document.getElementById("highlight-effect");
+const className = "in-view";
+
+const observer = new IntersectionObserver(
+	(entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				wrapper.classList.add(className);
+				return;
+			}
+
+			wrapper.classList.remove(className);
+		});
+	},
+	{
+		threshold: 1
+	}
+);
+
+observer.observe(wrapper);
+
+</script>
   </body>
   </html>
   
